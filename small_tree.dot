@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="ldmc_ymax <= 0.4\nsquared_error = 0.5\nsamples = 13\nvalue = 2.3"] ;
+1 [label="ecoregion_Northern Brooks Range <= 0.5\nsquared_error = 0.1\nsamples = 12\nvalue = 2.1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ldmc_ymax <= -1.0\nsquared_error = 0.1\nsamples = 11\nvalue = 2.0"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 1\nvalue = 1.1"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 10\nvalue = 2.1"] ;
+2 -> 4 ;
+5 [label="squared_error = 0.0\nsamples = 1\nvalue = 2.8"] ;
+1 -> 5 ;
+6 [label="squared_error = -0.0\nsamples = 1\nvalue = 5.0"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
